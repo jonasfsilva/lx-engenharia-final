@@ -828,6 +828,16 @@
             </div>
 
             <div>
+              <label for="name" class="text-base font-medium text-gray-900">
+                Nome da Empresa
+              </label>
+              <div class="mt-2.5">
+                <input type="text" id="name" formControlName="company" placeholder="Informe seu nome completo"
+                  class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+              </div>
+            </div>
+
+            <div>
               <label for="email" class="text-base font-medium text-gray-900">
                 Email
               </label>
@@ -859,7 +869,7 @@
             </div>
 
 
-            <button type="submit" [disabled]="contactForm.invalid"
+            <button type="submit"
               class="inline-flex items-center justify-center px-12 py-4 text-base font-medium text-white transition-all duration-200 bg-orange-600 border border-transparent rounded-xl hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
               Enviar mensagem
             </button>

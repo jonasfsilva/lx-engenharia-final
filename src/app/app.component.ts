@@ -136,7 +136,7 @@ export class AppComponent implements OnInit, OnDestroy {
       }, 50);
     }
   }
-  
+
   quebraLinha(){
     const formattedText = this.clima.secondary_text.replace(/\r\n/g, '<br>');
   }
