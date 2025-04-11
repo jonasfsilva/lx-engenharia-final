@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule],
+  imports: [RouterOutlet, CommonModule, HttpClientModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -49,9 +50,9 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {
     this.contactForm = this.fb.group({
       name: ["", Validators.required],
-      email: ["", [Validators.required, Validators.email]],
+      email: ["", [Validators.required]],
       phone: ["", Validators.required],
-      company: [""],
+      company: ["", Validators.required],
       text: ["", Validators.required],
     });
   }
