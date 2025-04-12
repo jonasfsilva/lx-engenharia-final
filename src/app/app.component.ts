@@ -348,7 +348,7 @@ export class AppComponent implements OnInit, OnDestroy {
       console.log("Form Data:", this.contactForm.value); // Log the form data
       this.http
         .post(
-          "https://octopus-app-yiik3.ondigitalocean.app/sangatti/api/v1/contacts/",
+          "https://octopus-app-yiik3.ondigitalocean.app/lxengenharia/api/v1/contacts/",
           this.contactForm.value
         )
         .subscribe(
