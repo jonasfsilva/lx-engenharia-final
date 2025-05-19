@@ -881,7 +881,7 @@
 </section>
 
 <div *ngFor="let item of contato" class="whatsapp">
-  <a [href]="item.call_to_action_link" target="_blank" title="Whatsapp">
+  <a [href]="item.whatsapp_link" target="_blank" title="Whatsapp">
     <img src="/assets/images/icon-whatsapp.png" alt="Logo" /></a>
 </div>
 
@@ -900,7 +900,7 @@
         </a>
       </li>
       <li>
-        <a [href]="item.call_to_action_link" target="_blank" title="Whatsapp"
+        <a [href]="item.whatsapp_link" target="_blank" title="Whatsapp"
           class="inline-flex items-center justify-center w-7 h-7 text-gray-900 transition-all duration-200 rounded-full hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-200"
           rel="noopener">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 50 50">
