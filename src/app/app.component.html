@@ -92,8 +92,6 @@
 
 <section>
   <div *ngFor="let item of contato" class="relative mt-20 bg-white">
-    <a [href]="item.call_to_action_link" target="_blank" title="">
-
       <div class="relative mt-24 py-20 bg-white sm:py-16 lg:py-28">
         <div class="absolute inset-0">
           <img class="object-cover object-center w-full h-full lg:object-center" src="../assets/images/background1.png"
@@ -121,7 +119,6 @@
 
       <img *ngIf="isMobile" class="object-cover object-right w-full h-full lg:object-center"
         src="../assets/images/imgmobile.png" alt="" />
-    </a>
   </div>
 </section>
 
