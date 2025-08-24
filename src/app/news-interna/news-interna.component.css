@@ -1,0 +1,7 @@
+.card-image {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+    max-width: 500px; /* Limita a largura máxima */
+    object-fit: cover; /* Garante que a imagem preencha sem distorção */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
